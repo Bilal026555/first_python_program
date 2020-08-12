@@ -1,1 +1,1 @@
-# first_python_program
+# Simple python codes
