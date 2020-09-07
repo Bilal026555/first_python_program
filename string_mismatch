@@ -1,0 +1,16 @@
+# Type your code here
+def find_mismatch(s1,s2):
+    s1_folded=s1.casefold()
+    s2_folded=s2.casefold()
+    if len(s1_folded)!=len(s2_folded):
+        return 2
+    if s1_folded==s2_folded:
+        return 0
+    error = False
+    for a, b in zip(s1_folded, s2_folded):
+        if a != b:
+            if error:
+                return 2
+            error = True
+    return 1  
+        
